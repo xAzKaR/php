@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+		<meta charset="utf-8">
+		<meta name="viwerport" content="width=device-width, initial-scale=1.0">
+		<title> Academia Health Lieah </title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style2.css">
+	</head>
+	<body>
+
+		<header>
+			<h1 id="principal"> Health Lieah </h1>
+			
+
+			<nav class="menu-principal navbar navbar-expand-sm bg-primary navbar-dark">
+				<div class="container-fluid" >
+				  <a class="navbar-brand" href="#principal">Principal</a>
+				  <a class="navbar-brand" href="#quemsomos">Quem somos</a>
+				  <a class="navbar-brand" href="#horario">Planos</a>
+				  <a class="navbar-brand" href="#contato">Equipe</a>
+				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+					  <li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#horario" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						  Espaço do Cliente
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+						  <li><a class="dropdown-item" href="#">Cadastro</a></li>
+						  <li><hr class="dropdown-divider"></li>
+						  <li><a class="dropdown-item" href="#">Agente seu horário</a></li>
+						</ul>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Admin</a>
+					  </li>
+					</ul>
+					<form class="d-flex">
+					  <input class="form-control me-2" type="search" placeholder="Barra de pesquisa" aria-label="Search">
+					  <button class="btn btn-outline-success" type="submit">Localizar</button>
+					</form>
+				  </div>
+				</div>
+			  </nav>
+
+			
+
+		</header>
+		<main>
+			<section id="quemsomos">
+				<h2 >Quem somos</h2>
+			</section>
+			<section id="horario">
+				<h2>Agende seu horário</h2>
+				<h2>Tá na mão! </h2>
+Esse é o sistema de reservas da Health Lieah para as academias que reabriram, seguindo os decretos municipais.
+
+Para saber se a sua cidade já reabriu, clique aqui.
+
+Para agendar o seu treino, insira o seu CPF e reserve o melhor horário para você treinar!
+<br>
+		<label for="fname">CPF:</label><br>
+		<input placeholder="CPF (somente números)" class="form__input" autocomplete="off" type="text" name="fitness_classes_session[login]"
+		id="fitness_classes_session_login" data-text="CPF (somente números)"> <br>
+		<label for="lname">Senha:</label><br>
+		<input type="password" placeholder="Senha" class="form__input" autocomplete="off" name="fitness_classes_session[password]" id="fitness_classes_session_password" data-text="Senha">
+			<input type="submit" name="commit" autocomplete="off" data-element="button" class="fitness-classes__body-container__form__submit" value="ENTRAR">
+			<a href="#" class="ForgotPassword__link">Esqueci minha senha</a>
+			</section >
+			<section id="contato">
+				<h2 >Contato Livros &copysr;</h2>
+			</section>
+		</main>
+
+		<footer>
+			<h6> Leandro </h6>
+		</footer>
+
+
+<!--
+	<form actuib="#" method="get">
+	<fieldset>
+		<legend> Paçoca tempero e tudo o que há de bom </legend>
+
+		<label for="fname">Nome:</label><br>
+			<input type="text" id="fname" name="fname"><br>
+		<label for="lname">Sobrenome:</label><br>
+			<input type="text" id="lname" name="lname"><br>
+		<label for="sexo">Sexo:</label><br>
+			<input type="radio" name="sexo" value="masculino" id="masculino"><label for="masculino">Masculino</label><br>
+			<input type="radio" name="sexo" value="feminino" id="feminino"><label for="feminino">Feminino</label><br>
+	
+		<label> Conhecimentos</label><br>
+			<input type="checkbox" name="conhecimentos" value="bi" id="bi"> <label for="bi" style="color:green"> Tira meu cartão Psor </label><br>
+			<input type="checkbox" name="conhecimentos" value="php" id="php"> <label for="php"> PHP com MySQL </label><br>
+
+		<label id="teste">Estado Civil</label><br>
+			<input type="checkbox" name="civil" value="solteiro" id="solteiro"><label for="solteiro" id="solt">Solteiro</label><br>
+			<input type="checkbox" name="civil" value="casado" id="casado"><label for="casado" id="cas">Casado</label><br>
+		
+
+		
+		<label>Estado Civil</label><br>
+		<select id="civil" name="civil">
+			<option> -- </option>
+			<option id="delicia"> Bacon </option>
+			<option> Paçoca </option>
+			<option> Açaí </option>
+		</select> <br>
+
+		<label> Digite algo: </label> <br>
+			<textarea rows="10" cols="30" id="mensagem" name="mensagem"></textarea> <br>
+
+
+
+
+		<input type="Submit" value="Enviar">
+	</fieldset>
+	</form>
+
+-->
+	</body>
+</html>
+

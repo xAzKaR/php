@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+body
+{
+    background-color: rgb(173, 151, 223);
+    margin: 0;
+}
+
+h1{
+    font-family: 'Roboto Slab', serif;
+    font-size: 52px;
+    color: #FFFFFF;
+    padding-top: 5%;
+    text-shadow: #be4c0a 2px 2px;
+}
+
+header{
+    display: block;
+    height: 400px;
+    background-color: darkred;
+    text-align: center;
+    background-image: url(../img/academia_banner_4500x3000.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.fitness-classes__body-container__form__submit {
+    margin-top: 24px!important;
+    width: -webkit-fit-content!important;
+    width: -moz-fit-content!important;
+    width: fit-content!important;
+    display: block;
+    background-color: #fcb823;
+    padding: 8px 32px;
+    border-radius: 4px;
+    border: none!important;
+    font-family: Gotham Black,helvetica,arial,sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color .25s ease-in-out;
+}
+
+.fitness-classes__body-container__form input:not(:placeholder-shown) {
+    color: #000;
+}
+
+.fitness-classes__body-container__form input {
+    width: 65%;
+}
+.fitness-classes__body-container__form input {
+    margin-top: 12px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000;
+    color: #afafaf;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 36px;
+    outline: none;
+    border-radius: 2px;
+}
+.fitness-classes__body-container__form__submit {
+    margin-top: 24px!important;
+    width: -webkit-fit-content!important;
+    width: -moz-fit-content!important;
+    width: fit-content!important;
+    display: block;
+    background-color: #fcb823;
+    padding: 8px 32px;
+    border-radius: 4px;
+    border: none!important;
+    font-family: Gotham Black,helvetica,arial,sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color .25s ease-in-out;
+}
+[type=reset], [type=submit], button, html [type=button] {
+    -webkit-appearance: button;
+}
+button, input {
+    overflow: visible;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+user agent stylesheet
+input[type="submit" i] {
+    appearance: auto;
+    user-select: none;
+    white-space: pre;
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: -internal-light-dark(black, white);
+    background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+    box-sizing: border-box;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+user agent stylesheet
+input {
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+.fitness-classes__body-container__content {
+    font-family: Roboto,helvetica,arial,sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+}
+ 
+
+html {
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* Menu principal Grid e fundo*/
+.menu-principal{
+    display: block;
+    width: 100%;
+    background-color: #696969;
+    height: 60px;
+}
+/* Link */
+.ForgotPassword__link {
+    color: #333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#quemsomos{
+    display: block;
+    height: 400px;
+    background-color: darkgreen;
+}
+
+#horario{
+    display: block;
+    height: 400px;
+    background-color: rgb(39, 12, 195);   
+}
+
+#contato{
+    display: block;
+    height: 400px;
+    background-color: rgb(74, 11, 110);      
+}
+
+h2{
+    padding-top: 18px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*
+nav ul{
+    display: inline-flex;
+
+
+}
+
+nav ul li{
+    display: block;
+    padding: 1px;
+    font-weight: bold;
+}
+
+nav ul li a{
+    display: block;
+    background-color: #696969;
+    padding: 15px;
+    text-decoration: none;
+
+}
+
+nav ul li a:link, a:visited{
+    color: #FFFFFF;
+}
+
+nav ul li a:hover{
+    color: #000000;
+    background-color: #8a8a8a;
+
+}
+*/
+
+/* Teste */
+
+div a nav ul li{
+    display: block;
+    padding: 60px;
+    font-weight: bold;
+}
+
+div nav ul li a{
+    display: block;
+    background-color: #696969;
+    padding: 50px;
+    text-decoration: none;
+
+}
+
+div ul li a:link, a:visited{
+    color: #FFFFFF;
+}
+
+div ul li a:hover{
+    color: #000000;
+    background-color: #8a8a8a7e;
+
+}
+
+
+footer{
+    padding-top: 18px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    height: 200px;
+    background-color: #613800;
+    color: #FFFFFF;
+}

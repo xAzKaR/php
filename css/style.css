@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+body
+{
+    background-color: rgb(173, 151, 223);
+    margin: 0;
+}
+
+h1{
+    font-family: 'Roboto Slab', serif;
+    font-size: 52px;
+    color: #FFFFFF;
+    padding-top: 5%;
+    text-shadow: #be4c0a 2px 2px;
+}
+
+header{
+    display: block;
+    height: 400px;
+    background-color: darkred;
+    text-align: center;
+    background-image: url(../img/livraria_banner_7000x2800.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.menu-principal{
+    display: block;
+    width: 100%;
+    background-color: #696969;
+    height: 37px;
+}
+
+#quemsomos{
+    display: block;
+    height: 400px;
+    background-color: darkgreen;
+}
+
+#clube{
+    display: block;
+    height: 400px;
+    background-color: rgb(39, 12, 195);   
+}
+
+#contato{
+    display: block;
+    height: 400px;
+    background-color: rgb(74, 11, 110);      
+}
+
+h2{
+    padding-top: 18px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+nav ul{
+    display: inline-flex;
+
+}
+
+nav ul li{
+    display: block;
+    padding: 10px;
+}
+
+nav ul li a{
+    display: block;
+    background-color: #696969;
+    padding: 10px;
+    text-decoration: none;
+
+}
+
+nav ul li a:link, a:visited{
+    color: #FFFFFF;
+}
+
+nav ul li a:hover{
+    color: #000000;
+    background-color: #8a8a8a;
+
+}
+
+footer{
+    padding-top: 18px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    height: 200px;
+    background-color: #613800;
+    color: #FFFFFF;
+}
