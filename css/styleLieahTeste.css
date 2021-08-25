@@ -18,7 +18,7 @@ header{
     height: 400px;
     background-color: darkred;
     text-align: center;
-    background-image: url(../img/academia_banner_4500x3000.jpg);
+    background-image: url(../images/academia_banner_4500x3000.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -139,18 +139,17 @@ input {
 }
  
 
-html {
-    line-height: 1.15;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-}
-
 /* Menu principal Grid e fundo*/
 .menu-principal{
     display: block;
     width: 100%;
     background-color: #696969;
     height: 60px;
+    margin: auto;
+    text-align-last: center;
+    text-shadow: #FFFFFF;
+    padding-left: 25;
+    opacity: 0.7;
 }
 /* Link */
 .ForgotPassword__link {
@@ -177,7 +176,7 @@ html {
     background-color: rgb(74, 11, 110);      
 }
 
-h2{
+h2 {
     padding-top: 18px;
     font-size: 28px;
     font-weight: bold;
@@ -218,12 +217,14 @@ nav ul li a:hover{
 
 /* Teste */
 
+/*
 div a nav ul li{
     display: block;
     padding: 60px;
     font-weight: bold;
 }
-
+*/
+/*
 div nav ul li a{
     display: block;
     background-color: #696969;
@@ -231,6 +232,8 @@ div nav ul li a{
     text-decoration: none;
 
 }
+*/
+
 
 div ul li a:link, a:visited{
     color: #FFFFFF;
