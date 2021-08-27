@@ -14,27 +14,33 @@ h1{
 }
 
 .navbar .navbar-nav{
-    display: inline-block;
+    display: inline-flex;
     float: none;
 }
 
-.navbar .navbar-collapse {
-    text-align: right;
+.abs-center-x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.navbarSupportedContent2 {
-    text-align: right;
+.justified {
+    text-align: justify;
 }
-
-.teste {
+.centered {
     text-align: center;
+
+}
+
+.righter {
+    text-align: right;
+
 }
 
 header{
     display: block;
     height: 400px;
     background-color: darkred;
-    text-align: center;
     background-image: url(../images/academia_banner_4500x3000.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -43,6 +49,15 @@ header{
 
 }
 
+.menu-login{
+    padding-top: 5%;
+}
+.menu-login2{
+    padding-top: 10.5%;
+}
+.menu-login3{
+    padding-top: 15.5%;
+}
 .fitness-classes__body-container__form__submit {
     margin-top: 24px            !important;
     width: -webkit-fit-content  !important;
@@ -164,8 +179,6 @@ input {
 /* Link */
 .ForgotPassword__link {
     color: #333;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 #quemsomos{
@@ -193,20 +206,20 @@ h2 {
     text-align: center;
 }
 
-/*
-nav ul{
+
+hov, hov2{
     display: inline-flex;
 
 
 }
 
-nav ul li{
+hov, hov2{
     display: block;
     padding: 1px;
     font-weight: bold;
 }
 
-nav ul li a{
+hov, hov2{
     display: block;
     background-color: #696969;
     padding: 15px;
@@ -214,16 +227,6 @@ nav ul li a{
 
 }
 
-nav ul li a:link, a:visited{
-    color: #FFFFFF;
-}
-
-nav ul li a:hover{
-    color: #000000;
-    background-color: #8a8a8a;
-
-}
-*/
 
 /* Teste */
 
@@ -245,11 +248,11 @@ div nav ul li a{
 */
 
 
-div ul li a:link, a:visited{
+.hov :link :visited{
     color: #FFFFFF;
 }
 
-div ul li a:hover{
+.hov2 :hover{
     color: #000000;
     background-color: #8a8a8a7e;
 
