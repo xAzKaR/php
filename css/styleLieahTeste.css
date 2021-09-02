@@ -58,11 +58,9 @@ header{
 .menu-login3{
     padding-top: 15.5%;
 }
+
 .fitness-classes__body-container__form__submit {
-    margin-top: 24px            !important;
-    width: -webkit-fit-content  !important;
-    width: -moz-fit-content     !important;
-    width: fit-content          !important;
+
     display: block;
     background-color: #fcb823;
     padding: 8px 32px;
@@ -112,65 +110,14 @@ header{
     cursor: pointer;
     transition: background-color .25s ease-in-out;
 }
-[type=reset], [type=submit], button, html [type=button] {
-    -webkit-appearance: button;
-}
+
 button, input {
     overflow: visible;
 }
 button, input, optgroup, select, textarea {
     margin: 0;
 }
-* {
-    box-sizing: border-box;
-}
-user agent stylesheet
-input[type="submit" i] {
-    appearance: auto;
-    user-select: none;
-    white-space: pre;
-    align-items: flex-start;
-    text-align: center;
-    cursor: default;
-    color: -internal-light-dark(black, white);
-    background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
-    box-sizing: border-box;
-    padding: 1px 6px;
-    border-width: 2px;
-    border-style: outset;
-    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-image: initial;
-}
-user agent stylesheet
-input {
-    text-rendering: auto;
-    color: -internal-light-dark(black, white);
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: start;
-    appearance: auto;
-    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
-    -webkit-rtl-ordering: logical;
-    cursor: text;
-    margin: 0em;
-    font: 400 13.3333px Arial;
-    padding: 1px 2px;
-    border-width: 2px;
-    border-style: inset;
-    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-image: initial;
-}
-.fitness-classes__body-container__content {
-    font-family: Roboto,helvetica,arial,sans-serif;
-    font-size: 16px;
-    line-height: 19px;
-}
  
-
 /* Menu principal Grid e fundo*/
 .menu-principal{
     height: 60px;
