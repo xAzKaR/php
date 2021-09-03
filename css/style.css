@@ -1,5 +1,12 @@
+/*
+	Solitude by TEMPLATE STOCK
+	templatestock.co @templatestock
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+*/
+
 html,
 button,
+input,
 select,
 textarea {
     color: #222;
@@ -15,165 +22,6 @@ body {
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
-
-/* Imagem Principal */
-
- header{
-    display: block;
-    height: 400px;
-    background-color: darkred;
-    text-align: center;
-    background-image: url(../images/academia_banner_4500x3000.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-
- }
-
-/* 
-*Link 
-*/
-.ForgotPassword__link {
-    color: #333;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-#quemsomos{
-    display: block;
-    height: 400px;
-    background-color: darkgreen;
-}
-
-#horario{
-    display: block;
-    height: 400px;
-    background-color: rgb(39, 12, 195);   
-}
-
-#contato{
-    display: block;
-    height: 400px;
-    background-color: rgb(74, 11, 110);      
-}
-
-/*
-.fitness-classes__body-container__form__submit {
-    margin-top: 24px!important;
-    width: -webkit-fit-content!important;
-    width: -moz-fit-content!important;
-    width: fit-content!important;
-    display: block;
-    background-color: #fcb823;
-    padding: 8px 32px;
-    border-radius: 4px;
-    border: none!important;
-    font-family: Gotham Black,helvetica,arial,sans-serif;
-    font-size: 16px;
-    line-height: 19px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background-color .25s ease-in-out;
-}
-
-.fitness-classes__body-container__form input:not(:placeholder-shown) {
-    color: #000;
-}
-
-.fitness-classes__body-container__form input {
-    width: 65%;
-}
-.fitness-classes__body-container__form input {
-    margin-top: 12px;
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid #000;
-    color: #afafaf;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 36px;
-    outline: none;
-    border-radius: 2px;
-}
-.fitness-classes__body-container__form__submit {
-    margin-top: 24px!important;
-    width: -webkit-fit-content!important;
-    width: -moz-fit-content!important;
-    width: fit-content!important;
-    display: block;
-    background-color: #fcb823;
-    padding: 8px 32px;
-    border-radius: 4px;
-    border: none!important;
-    font-family: Gotham Black,helvetica,arial,sans-serif;
-    font-size: 16px;
-    line-height: 19px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background-color .25s ease-in-out;
-}
-[type=reset], [type=submit], button, html [type=button] {
-    -webkit-appearance: button;
-}
-button, input {
-    overflow: visible;
-}
-button, input, optgroup, select, textarea {
-    margin: 0;
-}
-* {
-    box-sizing: border-box;
-}
-user agent stylesheet
-input[type="submit" i] {
-    appearance: auto;
-    user-select: none;
-    white-space: pre;
-    align-items: flex-start;
-    text-align: center;
-    cursor: default;
-    color: -internal-light-dark(black, white);
-    background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
-    box-sizing: border-box;
-    padding: 1px 6px;
-    border-width: 2px;
-    border-style: outset;
-    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-image: initial;
-}
-user agent stylesheet
-input {
-    text-rendering: auto;
-    color: -internal-light-dark(black, white);
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: start;
-    appearance: auto;
-    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
-    -webkit-rtl-ordering: logical;
-    cursor: text;
-    margin: 0em;
-    font: 400 13.3333px Arial;
-    padding: 1px 2px;
-    border-width: 2px;
-    border-style: inset;
-    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-image: initial;
-}
-.fitness-classes__body-container__content {
-    font-family: Roboto,helvetica,arial,sans-serif;
-    font-size: 16px;
-    line-height: 19px;
-}
-
-*/
-
-
 
 ::-moz-selection {
     background: #f2c2c9;

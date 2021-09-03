@@ -1,164 +1,523 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+  	<!-- Bootstrap 	Online	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">	</script>
+	-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-	<!-- Bootstrap 		-->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
-	</script>
-	<!-- Responsive -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Title -->
-	<title> Academia Health Lieah </title>
-	<!-- Bootstrap Local 
-		<link href="css/bootstrap.css" rel="stylesheet"> -->
+    <title> Healthy Lieah </title>
+
+	<!-- Bootstrap Local  -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
 	<!-- Link Style	-->
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/styleLieahTeste.css">
-	<link rel="stylesheet" href="css/elusive-webfont.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/elusive-webfont.css">
 	<!-- Animation and JS Scripts -->
-	<link href="css/animate.css" rel="stylesheet">
-	<script src="js/jquery.min.js"></script>
+    <link href="css/animate.css" rel="stylesheet">
+    
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/modernizr.custom.js"></script>
-</head>
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
 
-<body>
-
-	<nav class="navbar navbar-expand-sm navbar-expand-lg  bg-warning p-4 sticky-top navbar-dark bg-dark">
-		<div class="container-fluid">
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-				aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-				<a class="navbar-brand" href="index.html">Healthy Lieah</a>
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#principal">Principal</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#quemsomos">Quem Somos</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#Equipe">Equipe</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="cadastro.html">Cadastro</a>
-					</li>
+  <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+  
+  
+  	<div id="navbar-main">
+      <!-- Fixed navbar -->
+	    <div class="navbar navbar-default nav-dark navbar-fixed-top">
+	      <div class="container">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	          	<i class="el-icon-lines"></i>
+	          </button>
+	          <a class="navbar-brand hidden-xs hidden-sm" href="index.html"><h1> Healthy Lieah </h1></a>
+	        </div>
+	        <div class="navbar-collapse collapse">
+	          	<ul class="nav navbar-nav">
+		            <li> <a href="#home" 		class="smoothScroll">	Principal 	</a></li>
+					<li> <a href="#about"		class="smoothScroll">	Sobre 		</a></li>
+					<li> <a href="#services" 	class="smoothScroll">	Serviços 	</a></li>					
+					<li> <a href="#team" 		class="smoothScroll">	Equipe 		</a></li>
+					<li> <a href="#portfolio"	class="smoothScroll">	Portfólio 	</a></li>
+					<li> <a href="#contact" 	class="smoothScroll">	Contato 	</a></li>
 				</ul>
-			</div>
-			<form class="righter d-flex nav-col centered mx-auto ">
-				<input class="form-control me-2 mx-auto" type="search" placeholder="Barra de pesquisa"
-					aria-label="Search">
-				<button class="btn btn-outline-success navbar" type="submit">Localizar</button>
-			</form>
-		</div>
-	</nav>
+	        </div><!--/.nav-collapse -->
+	      </div>
+	    </div>
+    </div>
 
-	<header>
-		<h1 id="principal" class="centered"> Health Lieah </h1>
+  
+  
+		<!-- ==== HEADERWRAP ==== -->
+	    <div id="headerwrap" id="home" name="Principal">
+			<header class="clearfix">
+	  		 		<h1 class="animated bounceIn">Healthy Lieah</h1>
+	  		 		<p class="animated slideInLeft">Estamos a disposição para ajuda-lo!</p>
+	  		 		<p class="animated slideInRight">Sua saúde melhora aqui!</p>
+	  		 		<a href="cadastro.html" class="btn homebtn smoothScroll"> Cadastre-se! <i class="el-icon-chevron-down homeicon"></i></a>
+	  		</header>	    
+	    </div><!-- /headerwrap -->
 
-
-	</header>
-	<main>
-		<section id="quemsomos">
-			<h2>Quem somos</h2>
-			<!-- ==== ABOUT ==== -->
-			<div class="container">
-				<div class="row white">
-					<h1 class="fade-down centered ">A LITTLE ABOUT US</h1>
-					<hr>
-
-					<div class="fade-up col-md-6">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur suscipit, lorem non
+		
+		<!-- ==== ABOUT ==== -->
+		<div class="container" id="about" name="Sobre">
+			<div class="row white">
+				<h1 class="fade-down centered">A LITTLE ABOUT US</h1>
+				<hr>
+				
+				<div class="fade-up col-md-6">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur suscipit, lorem non
 							bibendum congue, lacus diam viverra eros, eu interdum urna erat non enim. Praesent molestie
 							ullamcorper velit non luctus. Etiam fringilla tortor sed facilisis commodo. Suspendisse non
 							massa a erat tempor interdum. Morbi condimentum turpis vitae augue varius molestie. Sed
 							gravida, sapien bibendum eleifend suscipit, dui lorem rutrum elit, pharetra commodo risus
-							felis id erat. Vivamus et ante enim. Phasellus luctus aliquam enim tincidunt finibus. </p>
-					</div><!-- col-md-6 -->
-
-					<div class="fade-up col-md-6">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur suscipit, lorem non
+							felis id erat. Vivamus et ante enim. Phasellus luctus aliquam enim tincidunt finibus.  </p>
+				</div><!-- col-md-6 -->
+				
+				<div class="fade-up col-md-6">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur suscipit, lorem non
 							bibendum congue, lacus diam viverra eros, eu interdum urna erat non enim. Praesent molestie
 							ullamcorper velit non luctus. Etiam fringilla tortor sed facilisis commodo. Suspendisse non
 							massa a erat tempor interdum. Morbi condimentum turpis vitae augue varius molestie. Sed
 							gravida, sapien bibendum eleifend suscipit, dui lorem rutrum elit, pharetra commodo risus
-							felis id erat. Vivamus et ante enim. Phasellus luctus aliquam enim tincidunt finibus. </p>
-					</div><!-- col-md-6 -->
-				</div><!-- row -->
-			</div><!-- container -->
-		</section>
-		<section id="horario">
-			<h2>Agende seu horário</h2>
-			<p class="justified abs-center-x">Esse é o sistema de reservas da Health Lieah para as academias que
-				reabriram, seguindo os decretos municipais.
-				Para saber se a sua cidade já reabriu, clique aqui.
-				Para agendar o seu treino, insira o seu CPF e reserve o melhor horário para você treinar!
-			</p><br>
+							felis id erat. Vivamus et ante enim. Phasellus luctus aliquam enim tincidunt finibus.  </p>
+				</div><!-- col-md-6 -->
+			</div><!-- row -->
+		</div><!-- container -->
 
-
-			<form action="#" method="get" class="centered">
-				<div class="row menu-login">
-					<div class="col-lg-4 col-sm-12 mb-3">
-						<label for="cpf" class="form-label">CPF:</label>
-						<input type="text" class="form-control centered" id="cpf" name="cpf" placeholder="Somente números">
-						<label for="senha" class="form-label">Senha:</label>
-						<input type="password" placeholder="Senha" class="form-control centered" autocomplete="off" name="senha" id="senha" data-text="Senha">
-						<input type="submit" name="commit" autocomplete="off" data-element="button" class="fitness-classes__body-container__form__submit" value="ENTRAR">
-						<a href="#" class="ForgotPassword__link">Esqueci minha senha</a>
+				<!--  SERVICES -->
+		<div class="greywrap">
+			<div class="container" id="services" name="Serviços">			
+				<div class="row">
+					<div class="col-md-4 col-sm-4 col-xs-6 callout">
+						<div class="col-md-3 service-icon-wrapper img-circle">
+							<i class="icon el-icon-time"></i>
+						</div>
+						<div class="col-md-9 fade-up service-info">
+							<h2>Treino personalizado</h2>
+							<p>Offending belonging promotion provision an be oh consulted ourselves it. Blessing welcomed ladyship she met humoured sir breeding her. Six curiosity day assurance bed necessary.</p>
+						</div>
+					</div>
+						
+					<div class="col-md-4 col-sm-4 col-xs-6 callout">
+						<div class="col-md-3 service-icon-wrapper img-circle">
+							<i class="icon el-icon-star"></i>
+						</div>
+						<div class="col-md-9 fade-up service-info">
+							<h2>Pioneiros no mercado</h2>
+							<p>Certain but she but shyness why cottage. Gay the put instrument sir entreaties affronting. Pretended exquisite see cordially the you.</p>
+						</div>
 					</div>
 					
+					<div class="col-md-4 col-sm-4 col-xs-6 callout">
+						<div class="col-md-3 service-icon-wrapper img-circle">
+							<i class="icon el-icon-user"></i>
+						</div>
+						<div class="col-md-9 fade-up service-info">
+							<div class="fade-up">
+								<h2> Professores a disposição </h2>
+								<p>Parlors men express had private village man. Discovery moonlight recommend all one not. Indulged to answered prospect it bachelor is he bringing shutters. Pronounce forfeited mr direction oh he dashwoods ye unwilling.</p>
+							</div>
+						</div>
+					</div>	
 				</div>
+			</div>
+		</div>
+  		
 
-			
-		</section>
-		<section id="contato">
-			<h2>Contato Healthy &&copy;2021</h2>
-		</section>
-	</main>
+		<!-- ==== SECTION DIVIDER2 -->
+		<section class="section-divider textdivider divider2">
+			<div class="container">
+				<h1 class="fade-down">Mudanças de hábito no primeiro mês</h1>
+				<hr>
+				<div class="col-md-3">
+					<span class="counter">50</span>
+					<span class="counter-desc">Aumento de disposição em porcentagem</span>
+				</div>
+				<div class="col-md-3">
+					<span class="counter">1000</span>
+					<span class="counter-desc">Perda de gordura associado a uma alimentação calibrada</span>
+				</div>
+				<div class="col-md-3">
+					<span class="counter">10000</span>
+					<span class="counter-desc">Calorias por treino exaustivo</span>
+				</div>
+				<div class="col-md-3">
+					<span class="counter">100000</span>
+					<span class="counter-desc">Previsão com teor responsivo</span>
+				</div>
+			</div><!-- container -->
+		</section><!-- section -->
 
-	<footer>
-		<h6> Leandro </h6>
-	</footer>
 
+		
 
-	<!--
-	<form actuib="#" method="get">
-	<fieldset>
-		<legend> Paçoca tempero e tudo o que há de bom </legend>
-		<label for="fname">Nome:</label><br>
-			<input type="text" id="fname" name="fname"><br>
-		<label for="lname">Sobrenome:</label><br>
-			<input type="text" id="lname" name="lname"><br>
-		<label for="sexo">Sexo:</label><br>
-			<input type="radio" name="sexo" value="masculino" id="masculino"><label for="masculino">Masculino</label><br>
-			<input type="radio" name="sexo" value="feminino" id="feminino"><label for="feminino">Feminino</label><br>
-	
-		<label> Conhecimentos</label><br>
-			<input type="checkbox" name="conhecimentos" value="bi" id="bi"> <label for="bi" style="color:green"> Tira meu cartão Psor </label><br>
-			<input type="checkbox" name="conhecimentos" value="php" id="php"> <label for="php"> PHP com MySQL </label><br>
-		<label id="teste">Estado Civil</label><br>
-			<input type="checkbox" name="civil" value="solteiro" id="solteiro"><label for="solteiro" id="solt">Solteiro</label><br>
-			<input type="checkbox" name="civil" value="casado" id="casado"><label for="casado" id="cas">Casado</label><br>
+		<!-- ==== TEAM MEMBERS ==== -->
+		<div class="container section" id="team" name="team">
+		<br>
+			<div class="row white centered">
+				<h1 class="fade-down centered">NOSSA EQUIPE!</h1>
+				<hr class="fade-down title-mb">
+				<div class="col-md-4 ">
+					<div class="col-md-3 col-sm-3 col-xs-3 fade-down team-image-wrapper">
+						<img class="img team-image" src="images/team01.jpg" alt="">
+						<a href="#" class="team-social twitter"><i class="el-icon-twitter"></i></a>
+						<a href="#" class="team-social facebook"><i class="el-icon-facebook"></i></a>
+						<a href="#" class="team-social flickr"><i class="el-icon-flickr"></i></a>
+					</div>
+					<div class="col-md-9 col-sm-9 col-xs-9 fade-up team-info">
+						<h4>Danny Jones Gata</h4>
+						<p>Bla blablablablablabala bla blablabla blablabla Bla blablablablablabala bla blablabla blablabla Bla blablablablablabala bla blablabla blablabla</p>
+					</div>
+				</div>
+				
+				<div class="col-md-4">
+					<div class="col-md-3 col-sm-3 col-xs-3 fade-down team-image-wrapper">
+						<img class="img team-image" src="images/team02.jpg" alt="">
+						<a href="#" class="team-social twitter"><i class="el-icon-twitter"></i></a>
+						<a href="#" class="team-social facebook"><i class="el-icon-facebook"></i></a>
+						<a href="#" class="team-social flickr"><i class="el-icon-flickr"></i></a>
+					</div>
+					<div class="col-md-9 col-sm-9 col-xs-9 fade-up team-info">
+						<h4>Joana Joaninha</h4>
+						<p>Bla blablablablablabala bla blablabla blablabla Bla blablablablablabala bla blablabla blablabla Bla blablablablablabala bla blablabla blablabla Bla blablablablablabala bla blablabla blablabla</p>
+					</div>
+				</div>
+				
+				<div class="col-md-4">
+					<div class="col-md-3 col-sm-3 col-xs-3 fade-down team-image-wrapper">
+						<img class="img team-image" src="images/team03.jpg" alt="">
+						<a href="#" class="team-social twitter"><i class="el-icon-twitter"></i></a>
+						<a href="#" class="team-social facebook"><i class="el-icon-facebook"></i></a>
+						<a href="#" class="team-social flickr"><i class="el-icon-flickr"></i></a>
+					</div>
+					<div class="col-md-9 col-sm-9 col-xs-9 fade-up team-info">
+						<h4>Lerry Crécia</h4>
+						<p>Bla blablablablablabala bla blablabla blablabla Bla blablablablablabala bla blablabla blablabla</p>
+					</div>
+				</div>
+				
+			</div><!-- row -->
+		</div><!-- container -->
+
+		<!-- ==== GREYWRAP ==== -->
+		<div class="greywrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 centered fade-up">
+						<img class="img-responsive" src="images/macbook.png" align="">
+					</div>
+					<div class="col-md-6 fade-down">
+						<h2>Acompanhamento total pelo sistema</h2>
+						<p>Entre em contato diretamente com o seu instrutor ou personal.</p>
+						<p><a class="btn btn-success">Entre em contato</a></p>
+					</div>					
+				</div><!-- row -->
+			</div>
+			<br>
+			<br>
+		</div><!-- greywrap -->
+		
+		<!-- ==== SECTION DIVIDER3 -->
+		<section class="section-divider textdivider divider3">
+			<div class="container">
+				<h1 class="fade-down">A melhor equipe de competição irá ajudar você a competir!</h1>
+				<hr>
+				<p class="fade-up">Se tiver interesse na área de competição, ajudaremos você com o melhor treinamento e alimentação! Bla bla bla bla bla bla bla bla bla</p>
+			</div><!-- container -->
+		</section><!-- section -->
+		
+		<!-- ==== PORTFOLIO ==== -->
+		<div id="portfolio" name="portfolio">
+		<br>
+			<div class="row white">
+				<h1 class="fade-down centered">Programas disponíveis</h1>
+				<hr class="fade-down title-mb">
+			</div><!-- /row -->
+			<div class="">
+			<div class="">	
+				
+				<div id="portfolio-carousel">
+					<!-- PORTFOLIO IMAGE 1 -->
+					<div class="fade-up col-md-4 ">
+				    	<div class="grid mask">
+							<figure>
+								<img class="img-responsive" src="images/folio01.jpg" alt="">
+								<figcaption>
+									<h5>Algum Exercício</h5>
+									<a href="single-project.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
+									<a href="images/folio01.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+								</figcaption><!-- /figcaption -->
+							</figure><!-- /figure -->
+				    	</div><!-- /grid-mask -->
+					</div><!-- /col -->					
+					
+					<!-- PORTFOLIO IMAGE 2 -->
+					<div class="fade-up col-md-4">
+				    	<div class="grid mask">
+							<figure>
+								<img class="img-responsive" src="images/folio02.jpg" alt="">
+								<figcaption>
+									<h5>Algum Exercício</h5>
+									<a href="single-project.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
+									<a href="images/folio01.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+								</figcaption><!-- /figcaption -->
+							</figure><!-- /figure -->
+				    	</div><!-- /grid-mask -->
+					</div><!-- /col -->
+					
+					<!-- PORTFOLIO IMAGE 3 -->
+					<div class="fade-up col-md-4">
+				    	<div class="grid mask">
+							<figure>
+								<img class="img-responsive" src="images/folio03.jpg" alt="">
+								<figcaption>
+									<h5>Algum Exercício</h5>
+									<a href="single-project.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
+									<a href="images/folio01.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+								</figcaption><!-- /figcaption -->
+							</figure><!-- /figure -->
+				    	</div><!-- /grid-mask -->
+					</div><!-- /col -->
+
+					<!-- PORTFOLIO IMAGE 4 -->
+					<div class="fade-up col-md-4 ">
+				    	<div class="grid mask">
+							<figure>
+								<img class="img-responsive" src="images/folio04.jpg" alt="">
+								<figcaption>
+									<h5>Algum Exercício</h5>
+									<a href="single-project.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
+									<a href="images/folio01.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+								</figcaption><!-- /figcaption -->
+							</figure><!-- /figure -->
+				    	</div><!-- /grid-mask -->
+					</div><!-- /col -->
+					
+					<!-- PORTFOLIO IMAGE 5 -->
+					<div class="fade-up col-md-4">
+				    	<div class="grid mask">
+							<figure>
+								<img class="img-responsive" src="images/folio05.jpg" alt="">
+								<figcaption>
+									<h5>Algum Exercício</h5>
+									<a href="single-project.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
+									<a href="images/folio01.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+								</figcaption><!-- /figcaption -->
+							</figure><!-- /figure -->
+				    	</div><!-- /grid-mask -->
+					</div><!-- /col -->
+					
+					<!-- PORTFOLIO IMAGE 6 -->
+					<div class="fade-up col-md-4">
+				    	<div class="grid mask">
+							<figure>
+								<img class="img-responsive" src="images/folio06.jpg" alt="">
+								<figcaption>
+									<h5>Algum Exercício</h5>
+									<a href="single-project.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
+									<a href="images/folio01.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+								</figcaption><!-- /figcaption -->
+							</figure><!-- /figure -->
+				    	</div><!-- /grid-mask -->
+					</div><!-- /col -->
+
+<!-- PORTFOLIO IMAGE 1 -->
+					<div class="fade-up col-md-4 ">
+				    	<div class="grid mask">
+							<figure>
+								<img class="img-responsive" src="images/folio01.jpg" alt="">
+								<figcaption>
+									<h5>Algum Exercício</h5>
+									<a href="single-project.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
+									<a href="images/folio01.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+								</figcaption><!-- /figcaption -->
+							</figure><!-- /figure -->
+				    	</div><!-- /grid-mask -->
+					</div><!-- /col -->				
+					
+					<!-- PORTFOLIO IMAGE 2 -->
+					<div class="fade-up col-md-4">
+				    	<div class="grid mask">
+							<figure>
+								<img class="img-responsive" src="images/folio02.jpg" alt="">
+								<figcaption>
+									<h5>Algum Exercício</h5>
+									<a href="single-project.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
+									<a href="images/folio01.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+								</figcaption><!-- /figcaption -->
+							</figure><!-- /figure -->
+				    	</div><!-- /grid-mask -->
+					</div><!-- /col -->
+					
+					<!-- PORTFOLIO IMAGE 3 -->
+					<div class="fade-up col-md-4">
+				    	<div class="grid mask">
+							<figure>
+								<img class="img-responsive" src="images/folio03.jpg" alt="">
+								<figcaption>
+									<h5>Algum Exercício</h5>
+									<a href="single-project.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
+									<a href="images/folio01.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+								</figcaption><!-- /figcaption -->
+							</figure><!-- /figure -->
+				    	</div><!-- /grid-mask -->
+					</div><!-- /col -->
+
+					<!-- PORTFOLIO IMAGE 4 -->
+					<div class="fade-up col-md-4 ">
+				    	<div class="grid mask">
+							<figure>
+								<img class="img-responsive" src="images/folio04.jpg" alt="">
+								<figcaption>
+									<h5>Algum Exercício</h5>
+									<a href="single-project.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
+									<a href="images/folio01.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+								</figcaption><!-- /figcaption -->
+							</figure><!-- /figure -->
+				    	</div><!-- /grid-mask -->
+					</div><!-- /col -->
+					
+					<!-- PORTFOLIO IMAGE 5 -->
+					<div class="fade-up col-md-4">
+				    	<div class="grid mask">
+							<figure>
+								<img class="img-responsive" src="images/folio05.jpg" alt="">
+								<figcaption>
+									<h5>Algum Exercício</h5>
+									<a href="single-project.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
+									<a href="images/folio01.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+								</figcaption><!-- /figcaption -->
+							</figure><!-- /figure -->
+				    	</div><!-- /grid-mask -->
+					</div><!-- /col -->
+					
+					<!-- PORTFOLIO IMAGE 6 -->
+					<div class="fade-up col-md-4">
+				    	<div class="grid mask">
+							<figure>
+								<img class="img-responsive" src="images/folio06.jpg" alt="">
+								<figcaption>
+									<h5>Algum Exercício</h5>
+									<a href="single-project.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
+									<a href="images/folio01.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+								</figcaption><!-- /figcaption -->
+							</figure><!-- /figure -->
+				    	</div><!-- /grid-mask -->
+					</div><!-- /col -->
+
+			</div><!-- /carousel -->	
+			</div><!-- /row -->			
+
+		</div><!-- /row -->
+	</div><!-- /container -->
+
+		<!-- ==== SECTION DIVIDER4 ==== -->
+		<section class="section-divider textdivider divider4">
+			<div class="container">
+				<h1 class="fade-down">Explore o seu potencial</h1>
+				<hr>
+				<p class="fade-up">Bringing him smallest met few now returned surprise learning jennings. Objection delivered eagerness he exquisite at do in. Warmly up he nearer mr merely me.</p>
+			</div><!-- container -->
+		</section><!-- section -->
 		
 		
-		<label>Estado Civil</label><br>
-		<select id="civil" name="civil">
-			<option> -- </option>
-			<option id="delicia"> Bacon </option>
-			<option> Paçoca </option>
-			<option> Açaí </option>
-		</select> <br>
-		<label> Digite algo: </label> <br>
-			<textarea rows="10" cols="30" id="mensagem" name="mensagem"></textarea> <br>
-		<input type="Submit" value="Enviar">
-	</fieldset>
-	</form>
--->
-</body>
+		
+		<!-- ==== SECTION DIVIDER6 ==== -->
+		<section class="section-divider textdivider divider6">
+			<div class="container">
+				<h1 class="fade-down">Entre em contato com nossos serviços.</h1>
+				<hr>
+				<div class="fade-up">
+					<p>Brasília, Distrito Federal</p>
+					<p>+61 12345 3456</p>
+				</div>
+			</div><!-- container -->
+		</section><!-- section -->
+		
+		<div class="container" id="contact" name="contact">
+			<div class="row row white">
+			<br>
+				<h1 class="centered fade-down">Obrigado por nos acompanhar!</h1>
+				<hr class="fade-down title-mb">
+				<div class="col-md-4 fade-up">
+					<h3>Informações para contato</h3>
+					<p><span class="icon icon-home"></span>Brasília, Distrito Federal<br/>
+						<span class="icon icon-phone"></span>+61 12345 2456<br/>
+						<span class="icon icon-mobile"></span>+61 94002-8922<br/>
+						<span class="icon icon-envelop"></span> <a href="#">academyheathy@lieh.com</a> <br/>
+						<span class="icon icon-twitter"></span> <a href="#">@healthy.com</a> <br/>
+						<span class="icon icon-facebook"></span> <a href="#">academyhealthy.com</a> <br/>
+					</p>
+				</div><!-- col -->
+				
+				<div class="col-md-4 fade-up">
+					<h3>Receba outras notícias</h3>
+					<p>Registre-se para acompanhar novidades e serviços do portal.</p>
 
+						<form class="form-horizontal" role="form">
+						  <div class="form-group">
+						    <label for="inputEmail1" class="col-md-4 control-label"></label>
+						    <div class="col-md-10">
+						      <input type="email" class="form-control" id="inputEmail1" placeholder="Melhor E-mail">
+						    </div>
+						  </div>
+						  <div class="form-group">
+						    <label for="text1" class="col-md-4 control-label"></label>
+						    <div class="col-md-10">
+						      <input type="text" class="form-control" id="text1" placeholder="Seu nome">
+						    </div>
+						  </div>
+						  <div class="form-group">
+						    <div class="col-md-10">
+						      <button type="submit" class="btn btn-success">Cadastrar</button>
+						    </div>
+						  </div>
+					   </form><!-- form -->
+				
+				</div><!-- col -->
+				
+				<div class="col-md-4 fade-up">
+					<h3>Support Us</h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				</div><!-- col -->
+
+			</div><!-- row -->
+		
+		</div><!-- container -->
+
+		<div id="footerwrap">
+			<div class="container">
+				<div class="btt-wrapper fade-down"><a class="btt-link smoothScroll" href="#home"><i class="el-icon-chevron-up"></i></a></div>
+				<ul id="footer-social" class="fade-down">
+					<li><a href="#" target="_blank" title="Nos siga"><i class="el-icon-twitter"></i></a></li>
+					<li><a href="#" target="_blank" title="Nos siga"><i class="el-icon-facebook"></i></a></li>
+					<li><a href="#" target="_blank" title="Nos siga"><i class="el-icon-googleplus"></i></a></li>
+					<li><a href="#" target="_blank" title="Nos siga"><i class="el-icon-flickr"></i></a></li>
+					<li><a href="#" target="_blank" title="Nos siga"><i class="el-icon-youtube"></i></a></li>
+					<li><a href="#" target="_blank" title="Nos siga"><i class="el-icon-rss"></i></a></li>
+				</ul>
+				<h4 class="fade-up">Created by xAzKaR </a> - Copyright 2021</h4>
+			</div>
+		</div>
+
+    <!-- Bootstrap e JavaScript
+    ================================================== -->
+    <!-- Adicionar sempre no final para o carregamento ser mais rápido -->
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+	<script type="text/javascript" src="js/init.js"></script>
+  </body>
 </html>
