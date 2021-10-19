@@ -33,7 +33,7 @@
 
   <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
   
-  
+  <header id="principal" name="principal">
   	<div id="navbar-main">
       <!-- Fixed navbar -->
 	    <div class="navbar navbar-default nav-dark navbar-fixed-top">
@@ -46,22 +46,23 @@
 	        </div>
 	        <div class="navbar-collapse collapse">
 	          	<ul class="nav navbar-nav">
-		            <li> <a href="#home" 		class="smoothScroll">	Principal 	</a></li>
-					<li> <a href="#about"		class="smoothScroll">	Sobre 		</a></li>
-					<li> <a href="#services" 	class="smoothScroll">	Serviços 	</a></li>					
-					<li> <a href="#team" 		class="smoothScroll">	Equipe 		</a></li>
-					<li> <a href="#portfolio"	class="smoothScroll">	Portfólio 	</a></li>
-					<li> <a href="#contact" 	class="smoothScroll">	Contato 	</a></li>
+		            <li> <a href="#principal">	Principal 	</a></li>
+					<li> <a href="#sobre">			Sobre 		</a></li>
+					<li> <a href="#servicos">		Serviços 	</a></li>					
+					<li> <a href="#team">			Equipe 		</a></li>
+					<li> <a href="#portfolio">		Portfólio 	</a></li>
+					<li> <a href="#contact">		Contato 	</a></li>
 				</ul>
 	        </div><!--/.nav-collapse -->
 	      </div>
 	    </div>
     </div>
-
+</header>
   
   
 		<!-- ==== HEADERWRAP ==== -->
-	    <div id="headerwrap" id="home" name="Principal">
+		<section>
+	    <div id="headerwrap">
 			<header class="clearfix">
 	  		 		<h1 class="animated bounceIn">Healthy Lieah</h1>
 	  		 		<p class="animated slideInLeft">Estamos a disposição para ajuda-lo!</p>
@@ -69,10 +70,11 @@
 	  		 		<a href="cadastro.html" class="btn homebtn smoothScroll"> Cadastre-se! <i class="el-icon-chevron-down homeicon"></i></a>
 	  		</header>	    
 	    </div><!-- /headerwrap -->
+		</section>
 
-		
 		<!-- ==== ABOUT ==== -->
-		<div class="container" id="about" name="Sobre">
+		<section id="sobre" name="sobre">
+		<div class="container" >
 			<div class="row white">
 				<h1 class="fade-down centered">A LITTLE ABOUT US</h1>
 				<hr>
@@ -96,10 +98,11 @@
 				</div><!-- col-md-6 -->
 			</div><!-- row -->
 		</div><!-- container -->
-
+		</section>
 				<!--  SERVICES -->
+		<section id="servicos" name="servicos">
 		<div class="greywrap">
-			<div class="container" id="services" name="Serviços">			
+			<div class="container" >			
 				<div class="row">
 					<div class="col-md-4 col-sm-4 col-xs-6 callout">
 						<div class="col-md-3 service-icon-wrapper img-circle">
@@ -135,7 +138,7 @@
 				</div>
 			</div>
 		</div>
-  		
+  		</section>
 
 		<!-- ==== SECTION DIVIDER2 -->
 		<section class="section-divider textdivider divider2">
@@ -334,7 +337,7 @@
 				    	</div><!-- /grid-mask -->
 					</div><!-- /col -->
 
-<!-- PORTFOLIO IMAGE 1 -->
+					<!-- PORTFOLIO IMAGE 1 -->
 					<div class="fade-up col-md-4 ">
 				    	<div class="grid mask">
 							<figure>
@@ -492,15 +495,19 @@
 				<div class="col-md-4 fade-up">
 					<h3>Support Us</h3>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-				</div><!-- col -->
+				</div><!-- ============= col ============= -->
 
 			</div><!-- row -->
 		
-		</div><!-- container -->
+		</div><!-- ============= container ============= -->
 
+		<!-- ============= Bottoms UP ============= -->
+		<a href="#navbar-main"><img src="images/topo.png" width="50" style="display: block; position: fixed; bottom: 0; right: 0;"></a>
+
+		<!-- ============= Footer ============= -->
 		<div id="footerwrap">
 			<div class="container">
-				<div class="btt-wrapper fade-down"> <a href="#navbar-main"> <i class="el-icon-chevron-up"> </i></a></div>
+				<div class="btt-wrapper fade-down"> <a href="#principal"> <i class="el-icon-chevron-up"> </i></a></div>
 				<ul id="footer-social" class="fade-down">
 					<li><a href="#" target="_blank" title="Nos siga"><i class="el-icon-twitter"></i></a></li>
 					<li><a href="#" target="_blank" title="Nos siga"><i class="el-icon-facebook"></i></a></li>
