@@ -1,4 +1,5 @@
 <?php
+
 /*
     if(isset($_POST['submit']))
     {
@@ -29,14 +30,12 @@
         print_r($_POST['termos']);
 
     }
+
 */
-
-
-    session_start();
     include_once("banco.php");
     
     $nome = $_POST['nome'];
-    $cpf = $_POST['cpf'];
+    $CPF = $_POST['cpf'];
     $data_nasc = $_POST['nascimento'];
     $sexo = $_POST['sexo'];
     $email = $_POST['email'];
@@ -51,8 +50,8 @@
     
     
     
-    $resultado = mysqli_query($conexao, "INSERT INTO cadastro (nome, cpf, data_nasc, sexo, email, tel_cli, end_cli, end_numero, b_cli, cid_cli, estado, cep)
-    VALUES ('$nome', '$cpf', '$data_nasc', '$sexo', '$email', '$tel_cli', '$end_cli', '$end_numero', '$b_cli', '$cid_cli', '$estado', '$cep', '$termos')");
+    $resultado = mysqli_query($conexao, "INSERT INTO cadastro (nome, CPF, data_nasc, sexo, email, tel_cli, end_cli, end_numero, b_cli, cid_cli, estado, cep, termos)
+    VALUES ('$nome', '$CPF', '$data_nasc', '$sexo', '$email', '$tel_cli', '$end_cli', $end_numero, '$b_cli', '$cid_cli', '$estado', '$cep', '$termos')");
        
 
 
@@ -141,7 +140,7 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li> <a href="#about"> Cadastro </a></li>
+                        <li> <a href="cadastro.php"> Cadastro </a></li>
 
                     </ul>
                 </div>
@@ -168,9 +167,7 @@
         <section class="row mx-5 mt-3 p-3 mb-3 bg-white rounded">
                 <form action="cadastro.php" method="POST">
                     <fieldset>
-                        <input type="hidden" name="matricula">
                         <div class="form-group">
-
                             <h4 class="mb-3" style="color: white">Dados Pessoais</h4>
                             <div class="col mb-3">
                                 <label for="nome" class="form-label">Nome Completo:</label>

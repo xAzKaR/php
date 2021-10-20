@@ -6,8 +6,12 @@ $bdSenha = 'azk123'; //Senha totalmente exposta do BD
 $bdBanco = 'academia'; //Nome do BD dentro do Servidor
 
 $conexao = mysqli_connect($bdServidor,$bdUsuario,$bdSenha,$bdBanco);
-if(!$conexao){
-    die("Houve um erro: ".mysqli_connect_error());
-}
 
+/*
+if ($conexao->connect_errno) {
+    echo "Erro";
+} else {
+    echo "Conexão efetuada com sucesso";
+}
+*/
 ?>

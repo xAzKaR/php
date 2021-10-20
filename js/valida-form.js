@@ -136,7 +136,7 @@ function exibeAlertaTermo() {
 }
 
 //Mostra Senha
-
+/*
 var verSenha = document.querySelector('#versenha');
 var senha = {
     senha1: document.querySelector('#senha1'),
@@ -156,3 +156,5 @@ function mostraSenha(input) {
        senha.senha2.type = 'password';
    }    
 }
+
+*/
