@@ -135,7 +135,10 @@ function exibeAlertaTermo() {
     }
 }
 
-//Mostra Senha
+
+
+
+//Mostra Senha Adicionar Senha - 19/10/2021
 /*
 var verSenha = document.querySelector('#versenha');
 var senha = {

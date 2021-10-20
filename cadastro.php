@@ -29,7 +29,7 @@ include_once("banco.php");
             echo "<script>alert('Ocorreu algum erro no cadastro');</script>";
         }
     
-        echo "<script>window.location.href = 'cadastro.html';</script>";
+            echo "<script>window.location.href = 'cadastro.html';</script>";
 
 
 
