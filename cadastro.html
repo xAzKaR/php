@@ -32,23 +32,69 @@
     <![endif]-->
 
     <style>
-        .centralizar {
-            align-self: center;
-            align-content: center;
-            text-align: center;
-            
+        righter {
+            text-align: right;
         }
-        label {
-            color: white;
-        }
-        body {
+        body{
             font-family: Arial, Helvetica, sans-serif;
             background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
         }
-
-
-        #submit {
-            background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+        .box{
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            border-radius: 15px;
+            width: 25%;
+        }
+        fieldset{
+            border: 3px solid dodgerblue;
+        }
+        legend{
+            border: 1px solid dodgerblue;
+            padding: 10px;
+            text-align: center;
+            background-color: dodgerblue;
+            border-radius: 8px;
+        }
+        .inputBox{
+            position: relative;
+        }
+        .inputUser{
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none;
+            color: white;
+            font-size: 15px;
+            width: 100%;
+            letter-spacing: 2px;
+        }
+        .labelInput{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none;
+            transition: .5s;
+        }
+        .inputUser:focus ~ .labelInput,
+        .inputUser:valid ~ .labelInput{
+            top: -20px;
+            font-size: 12px;
+            color: dodgerblue;
+        }
+        #data_nascimento{
+            border: none;
+            padding: 8px;
+            border-radius: 10px;
+            outline: none;
+            font-size: 15px;
+        }
+        #submit{
+            background-image: linear-gradient(to right,rgb(0, 92, 197), rgb(90, 20, 220));
             width: 100%;
             border: none;
             padding: 15px;
@@ -57,16 +103,13 @@
             cursor: pointer;
             border-radius: 10px;
         }
-
-        #submit:hover {
-            background-image: linear-gradient(to left, rgb(0, 80, 172), rgb(80, 19, 195));
+        #submit:hover{
+            background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
         }
     </style>
 </head>
 
-<body data-spy="scroll" data-offset="0" data-target="#navbar-main">
-
-
+<body>
     <div id="navbar-main">
         <!-- Fixed navbar -->
         <div class="navbar navbar-default nav-dark navbar-fixed-top">
@@ -81,6 +124,7 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
+                        <li> <a href="login-php/login.php"> Login </a></li>
                         <li> <a href="cadastro.html"> Cadastro </a></li>
 
                     </ul>
@@ -90,22 +134,99 @@
         </div>
     </div>
 
+    <div class="box">
+        <form action="cadastro.php" method="POST">
+            <fieldset>
+                <legend><b>Fórmulário de Clientes</b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome" class="labelInput">Nome completo</label>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="text" class="inputUser" id="cpf" name="cpf" maxlength="11" required>
+                    <label for="cpf"   class="labelInput">CPF:</label>
+                </div>
+                <br>
+                    <label for="nascimento"><b>Data de Nascimento:</b></label>
+                    <input type="date" name="nascimento" id="nascimento" required>
+                <br><br>
+
+                <div class="inputBox righter">
+                    <strong>Sexo:</strong>
+                    <select class="form-select" id="sexo" name="sexo" required>
+                        <option value="0" selected class="righter">Selecione uma opção</option>
+                        <option value="F">Feminino</option>
+                        <option value="M">Masculino</option>
+                        <option value="O">Outro</option>
+                    </select>
+
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="email" id="email" class="inputUser" required>
+                    <label for="email" class="labelInput">Email</label>
+                </div>
+                <br>
+
+                <div class="inputBox">
+                    <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                    <label for="telefone" class="labelInput">Telefone</label>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="endereco" id="endereco" class="inputUser" required>
+                    <label for="endereco" class="labelInput">Endereço</label>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="end_numero" id="end_numero" class="inputUser" required>
+                    <label for="end_numero" class="labelInput">Número</label>
+                </div>
+                <br>
+
+                <div class="inputBox">
+                    <input type="text" name="bairro" id="bairro" class="inputUser" required>
+                    <label for="bairro" class="labelInput">Bairro</label>
+                </div>                              
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                    <label for="cidade" class="labelInput">Cidade</label>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="estado" id="estado" class="inputUser" required>
+                    <label for="estado" class="labelInput">Estado</label>
+                </div>
+                <br>
+
+                <div class="inputBox">
+                    <input type="text" name="cep" id="cep" class="inputUser" required>
+                    <label for="cep" class="labelInput">Cep</label>
+                </div>                
+                <br>
+                <div class="inputBox">
+                    <input type="password" name="senha" id="senha" class="inputUser" required>  
+                    <label for="senha" class="labelInput"> Senha</label>                           
+                </div>                
+                <br>
+                    <input type="submit" name="submit" id="submit">
+                <div class="inputBox centralizar">
+                    <input type="checkbox" name="termos" id="termos" class="form-check-input" required>
+                    <label for="termos" class="termos">
+                    <a href="termo-privacidade.html" target="_blank" style="color: white" >Termos de Privacidade</a> |
+                    <a href="termo-de-uso.html" target="_blank" style="color: white">Termos de Uso</a>
+                    </label>
+                </div>
+            </fieldset>
+        </form>
+    </div>
 
 
-    <!-- ==== HEADERWRAP ==== -->
-    <div id="headerwrap" id="home" name="Principal">
-        <header class="clearfix">
-            <h1 class="animated bounceIn">Cadastro</h1>
-            <p class="animated slideInLeft">Estamos a disposição para ajuda-lo!</p>
-            <p class="animated slideInRight">Sua saúde melhora aqui!</p>
 
-        </header>
-    </div><!-- /headerwrap -->
-
-
-
-    <main class="container-fluid">
-        <section class="row mx-5 mt-3 p-3 mb-3 bg-white rounded">
+<!--
                 <form action="cadastro.php" method="POST">
                     <fieldset>
                         <div class="form-group">
@@ -133,11 +254,10 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="row mb-3">
-                                <div class="col-lg-6 col-sm-12 mb-3">
-                                    <label for="email" class="form-label">E-mail:</label>
-                                    <input type="email" class="form-control" id="email" name="email" placeholder="nome@dominio.com" required>
-                                </div>
+                             <div class="inputBox">
+                                <input type="text" name="email" id="email" class="inputUser" required>
+                                <label for="email" class="labelInput">Email</label>
+                             </div>
                                 <div class="col-lg-6 col-sm-12 mb-3">
                                     <label for="telefone" class="form-label">Telefone:</label>
                                     <input type="text" class="form-control" id="telefone" name="telefone" maxlength="11" placeholder="Somente numeros mais o DDD" required>
@@ -201,7 +321,11 @@
                                     <input type="text" class="form-control" id="cep" name="cep" placeholder="Somente números" required>
                                 </div>
                             </div>
-
+                            <div class="inputBox">
+                                <label for="senha" class="labelInput">Senha</label>
+                                <input type="password" name="senha" id="senha" class="inputUser" required>
+                                 
+                            </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-10 col-sm-12 mb-3 centralizar">
@@ -217,9 +341,9 @@
                         </div>
                     </fieldset>
                 </form>
-        </section>
-    </main>
+-->
 
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>  <br> <br>
     <div id="footerwrap">
         <div class="container">
             <div class="btt-wrapper fade-down"> <a href="#navbar-main"> <i class="el-icon-chevron-up"> </i></a></div>

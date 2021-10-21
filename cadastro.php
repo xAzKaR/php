@@ -14,11 +14,12 @@ include_once("banco.php");
     $estado = $_POST['estado'];
     $cep = $_POST['cep'];
     $termos = $_POST['termos'];
+    $senha = $_POST['senha'];
     
     
     
-    $resultado = mysqli_query($conexao, "INSERT INTO cadastro (nome, CPF, data_nasc, sexo, email, tel_cli, end_cli, end_numero, b_cli, cid_cli, estado, cep, termos)
-    VALUES ('$nome', '$CPF', '$data_nasc', '$sexo', '$email', '$tel_cli', '$end_cli', $end_numero, '$b_cli', '$cid_cli', '$estado', '$cep', '$termos')");
+    $resultado = mysqli_query($conexao, "INSERT INTO cadastro (nome, CPF, data_nasc, sexo, email, tel_cli, end_cli, end_numero, b_cli, cid_cli, estado, cep, termos, senha)
+    VALUES ('$nome', '$CPF', '$data_nasc', '$sexo', '$email', '$tel_cli', '$end_cli', $end_numero, '$b_cli', '$cid_cli', '$estado', '$cep', '$termos', '$senha')");
     
 
     
