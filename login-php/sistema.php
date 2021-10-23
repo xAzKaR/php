@@ -3,8 +3,9 @@
     // print_r($_SESSION);
     if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true))
     {
-        unset($_SESSION['email']);
-        unset($_SESSION['senha']);
+        #unset($_SESSION['email']);
+        #unset($_SESSION['senha']);
+        session_destroy();
         header('Location: login.php');
     }
     $logado = $_SESSION['email'];
@@ -21,8 +22,11 @@
         body{
             background: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
             color: white;
-            text-align: center;
         }
+        h1 {
+            color: white
+        }
+        
     </style>
 </head>
 <body>
@@ -37,9 +41,18 @@
             <a href="sair.php" class="btn btn-danger me-5">Sair</a>
         </div>
     </nav>
+
+<!-- Teste -->
+<!-- Teste -->
+
+
+
     <br>
     <?php
-        echo "<h1>Bem vindo <u>$logado</u></h1>";
+        #echo "<h1>Bem vindo <u>$logado</u></h1>";
+        echo "<h1>Bem vindo, <u>$logado</u></h1>";
+        include ('tarefas.php')
     ?>
+        <script src="js/valida-form.js"></script>
 </body>
 </html>

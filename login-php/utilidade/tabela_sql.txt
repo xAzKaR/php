@@ -1,0 +1,14 @@
+CREATE TABLE tarefas(
+    id INTEGER AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(20) NOT NULL,
+    descricao TEXT,
+    prazo DATE,
+    prioridade INTEGER(1),
+    concluida BOOLEAN
+    );
+
+CREATE TABLE anexos(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    tafera_id INT NOT NULL,
+    nome VARCHAR(255) NOT NULL,
+    arquivo VARCHAR(255) NOT NULL);
